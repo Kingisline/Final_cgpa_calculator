@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cse-01.css">
+    <title>GPA for CSE-01</title>
+</head>
+<body>
+
+
+    <div id="hideDiv" class="form-group">
+        <!-- style="display: none;"  -->
+        <h2 class="sem01">Semester 01</h2>
+        <br>
+        <br>
+     
+         <!-- dropdown options  -->
+    
+    
+        <div class="center-container">
+            <div class="center-content">
+                <div class="div1">
+                    <label for="select1">HS3151 / HS3152 - PROFESSIONAL ENGLISH - I</label>
+                    <br>
+                    <select id="select1" class="select1" onchange="optional(this)">
+                        <br>
+                        <option value="choose">Choose</option>
+                        <option value="pass">PASS</option>
+                        <option value="arrear">ARREAR</option>
+                    </select>
+                </div>
+    
+                <!-- div 01 optional case -->
+    
+                <div class="optional" style="display: none;"id="optional" onclick="div1()">
+                    <label class="label1" id="lab" for="">HS3151 / HS3152 GRADE:</label>
+                    <br>
+                    <input type="checkbox" value="o" name="1" id="o" onclick="onlyOne(this)"> <span class="checkmark">O</span>
+                    <input type="checkbox" value="a+" name="1" id="a+" onclick="onlyOne(this)"> <span class="checkmark">A+</span>
+                    <input type="checkbox" value="a" name="1" id="a" onclick="onlyOne(this)"> <span class="checkmark">A</span>
+                    <input type="checkbox" value="b+" name="1" id="b+" onclick="onlyOne(this)"> <span class="checkmark">B+</span>
+                    <input type="checkbox" value="b" name="1" id="b" onclick="onlyOne(this)"> <span class="checkmark">B</span>
+                    <input type="checkbox" value="c" name="1" id="c" onclick="onlyOne(this)"> <span class="checkmark">C</span>
+                </div>
+                
+                <div class="div1">
+                    <label for="select2">MA3151 - MATRICES AND CALCULUS</label>
+                    <br>
+                    <select id="select1" class="select1" onchange="optional2(this)">
+                        <br>
+                        <option value="choose">Choose </option>
+                        <option value="pass">PASS </option>
+                        <option value="arrear">ARREAR </option>
+                    </select>
+                </div>
+    
+                <!-- div 02 -->
+    
+                <div class="optional2" style="display: none;" id="optional2" onclick="div2()">
+                    <label class="label1" id="lab" for="">MA3151 / MA3152 GRADE:</label>
+                    <br>
+                    <input type="checkbox" value="o" name="2" id="o2" onclick="onlyOne2(this)"> <span class="checkmark">O</span>
+                    <input type="checkbox" value="a+" name="2" id="a+2" onclick="onlyOne2(this)"> <span class="checkmark">A+</span>
+                    <input type="checkbox" value="a" name="2" id="a2" onclick="onlyOne2(this)"> <span class="checkmark">A</span>
+                    <input type="checkbox" value="b+" name="2" id="b+2" onclick="onlyOne2(this)"> <span class="checkmark">B+</span>
+                    <input type="checkbox" value="b" name="2" id="b2" onclick="onlyOne2(this)"> <span class="checkmark">B</span>
+                    <input type="checkbox" value="c" name="2" id="c2" onclick="onlyOne2(this)"> <span class="checkmark">C</span>
+                </div>
+                
+                <div class="div1">
+                    <label for="select3">PH3151 - ENGINEERING PHYSICS</label>
+                    <br>
+                    <select id="select1" class="select1" onchange="optional3(this)">
+                        <option value="choose">Choose </option>
+                        <option value="pass">PASS </option>
+                        <option value="arrear">ARREAR </option>
+                    </select>
+                </div>
+                <!-- optional div 3 -->
+    
+                 <div class="optional3" style="display: none;" id="optional3" onclick="div3()">
+                    <label class="label1" id="lab" for="">PH3151 / PH3152 GRADE:</label>
+                    <br>
+                    <input type="checkbox" value="o" name="3" id="o3" onclick="onlyOne3(this)"> <span class="checkmark">O</span>
+                    <input type="checkbox" value="a+" name="3" id="a+3" onclick="onlyOne3(this)"> <span class="checkmark">A+</span>
+                    <input type="checkbox" value="a" name="3" id="a3" onclick="onlyOne3(this)"> <span class="checkmark">A</span>
+                    <input type="checkbox" value="b+" name="3" id="b+3" onclick="onlyOne3(this)"> <span class="checkmark">B+</span>
+                    <input type="checkbox" value="b" name="3" id="b3" onclick="onlyOne3(this)"> <span class="checkmark">B</span>
+                    <input type="checkbox" value="c" name="3" id="c3" onclick="onlyOne3(this)"> <span class="checkmark">C</span>
+                </div>
+                
+                <div class="div1">
+                    <label for="select4">CY3151 - ENGINEERING CHEMISTRY</label>
+                    <br>
+                    <select id="select4" class="select1" onclick="optional4(this)">
+                        <option value="choose">Choose </option>
+                        <option value="pass">PASS </option>
+                        <option value="arrear">ARREAR</option>
+                    </select>
+                </div>
+    
+                <!-- optional div for div 4 -->
+    
+                <div class="optional4" style="display: none;" id="optional4" onclick="div4()">
+                    <label class="label1" id="lab" for="">CY3151 / CY3151 GRADE:</label>
+                    <br>
+                    <input type="checkbox" value="o" name="4" id="o4" onclick="onlyOne4(this)"> <span class="checkmark">O</span>
+                    <input type="checkbox" value="a+" name="4" id="a+4" onclick="onlyOne4(this)"> <span class="checkmark">A+</span>
+                    <input type="checkbox" value="a" name="4" id="a4" onclick="onlyOne4(this)"> <span class="checkmark">A</span>
+                    <input type="checkbox" value="b+" name="4" id="b+4" onclick="onlyOne4(this)"> <span class="checkmark">B+</span>
+                    <input type="checkbox" value="b" name="4" id="b4" onclick="onlyOne4(this)"> <span class="checkmark">B</span>
+                    <input type="checkbox" value="c" name="4" id="c4" onclick="onlyOne4(this)"> <span class="checkmark">C</span>
+                </div>
+                
+                <div class="div1">
+                    <label for="select5">GE3152 - தமிழர்மரப / HERITAGE OF TAMILS</label>
+                    <br>
+                    <select id="select5" class="select1" onclick="optional5(this)">
+                        <option value="choose">Choose </option>
+                        <option value="pass">PASS </option>
+                        <option value="arrear">ARREAR</option>
+                    </select>
+                </div>
+    
+                 <!-- optional div for div 5 -->
+    
+                 <div class="optional5" style="display: none;" id="optional5" onclick="div5()">
+                    <label class="label1" id="lab" for="">GE3152 / GE3152 GRADE:</label>
+                    <br>
+                    <input type="checkbox" value="o" name="5" id="o5" onclick="onlyOne5(this)"> <span class="checkmark">O</span>
+                    <input type="checkbox" value="a+" name="5" id="a+5" onclick="onlyOne5(this)"> <span class="checkmark">A+</span>
+                    <input type="checkbox" value="a" name="5" id="a5" onclick="onlyOne5(this)"> <span class="checkmark">A</span>
+                    <input type="checkbox" value="b+" name="5" id="b+5" onclick="onlyOne5(this)"> <span class="checkmark">B+</span>
+                    <input type="checkbox" value="b" name="5" id="b5" onclick="onlyOne5(this)"> <span class="checkmark">B</span>
+                    <input type="checkbox" value="c" name="5" id="c5" onclick="onlyOne5(this)"> <span class="checkmark">C</span>
+                </div>
+                
+                <div class="div1">
+                    <label for="select6">GE3151 - PROBLEM SOLVING AND PYTHON PROGRAMMING</label>
+                    <br>
+                    <select id="select6" class="select1" onclick="optional6(this)">
+                        <option value="choose">Choose </option>
+                        <option value="pass">PASS </option>
+                        <option value="arrear">ARREAR </option>
+                    </select>
+                </div>
+    
+                 <!-- optional div for div 6 -->
+    
+                 <div class="optional6" style="display: none;" id="optional6" onclick="div6()">
+                    <label class="label1" id="lab" for="">GE3151 / GE3151 GRADE:</label>
+                    <br>
+                    <input type="checkbox" value="o" name="6" id="o6" onclick="onlyOne6(this)"> <span class="checkmark">O</span>
+                    <input type="checkbox" value="a+" name="6" id="a+6" onclick="onlyOne6(this)"> <span class="checkmark">A+</span>
+                    <input type="checkbox" value="a" name="6" id="a6" onclick="onlyOne6(this)"> <span class="checkmark">A</span>
+                    <input type="checkbox" value="b+" name="6" id="b+6" onclick="onlyOne6(this)"> <span class="checkmark">B+</span>
+                    <input type="checkbox" value="b" name="6" id="b6" onclick="onlyOne6(this)"> <span class="checkmark">B</span>
+                    <input type="checkbox" value="c" name="6" id="c6" onclick="onlyOne6(this)"> <span class="checkmark">C</span>
+                </div>
+                
+                <div class="div1">
+                    <label for="select7">GE3171 - PROBLEM SOLVING AND PYTHON PROGRAMMING LABORATORY</label>
+                    <br>
+                    <select id="select7" class="select1" onclick="optional7(this)">
+                        <option value="choose">Choose </option>
+                        <option value="pass">PASS </option>
+                        <option value="arrear">ARREAR</option>
+                    </select>
+                </div>
+    
+                    <!-- optional div for div 7 -->
+    
+                    <div class="optional7" style="display: none;" id="optional7" onclick="div7()">
+                        <label class="label1" id="lab" for="">GE3171 / GE3171 GRADE:</label>
+                        <br>
+                        <input type="checkbox" value="o" name="7" id="o7" onclick="onlyOne7(this)"> <span class="checkmark">O</span>
+                        <input type="checkbox" value="a+" name="7" id="a+7" onclick="onlyOne7(this)"> <span class="checkmark">A+</span>
+                        <input type="checkbox" value="a" name="7" id="a7" onclick="onlyOne7(this)"> <span class="checkmark">A</span>
+                        <input type="checkbox" value="b+" name="7" id="b+7" onclick="onlyOne7(this)"> <span class="checkmark">B+</span>
+                        <input type="checkbox" value="b" name="7" id="b7" onclick="onlyOne7(this)"> <span class="checkmark">B</span>
+                        <input type="checkbox" value="c" name="7" id="c7" onclick="onlyOne7(this)"> <span class="checkmark">C</span>
+                    </div>
+                
+                <div class="div1">
+                    <label for="select8">BS3171 - PHYSICS AND CHEMISTRY LABORATORY</label>
+                    <br>
+                    <select id="select8" class="select1" onclick="optional8(this)">
+                        <option value="choose">Choose </option>
+                        <option value="pass">PASS </option>
+                        <option value="arrear">ARREAR</option>
+                    </select>
+                </div>
+    
+                
+                    <!-- optional div for div 8 -->
+    
+                    <div class="optional8" style="display: none;" id="optional8" onclick="div8()">
+                        <label class="label1" id="lab" for="">BS3171 / BS3171 GRADE:</label>
+                        <br>
+                        <input type="checkbox" value="o" name="8" id="o8" onclick="onlyOne8(this)"> <span class="checkmark">O</span>
+                        <input type="checkbox" value="a+" name="8" id="a+8" onclick="onlyOne8(this)"> <span class="checkmark">A+</span>
+                        <input type="checkbox" value="a" name="8" id="a8" onclick="onlyOne8(this)"> <span class="checkmark">A</span>
+                        <input type="checkbox" value="b+" name="8" id="b+8" onclick="onlyOne8(this)"> <span class="checkmark">B+</span>
+                        <input type="checkbox" value="b" name="8" id="b8" onclick="onlyOne8(this)"> <span class="checkmark">B</span>
+                        <input type="checkbox" value="c" name="8" id="c8" onclick="onlyOne8(this)"> <span class="checkmark">C</span>
+                    </div>
+                
+                <div class="div1">
+                    <label for="select9">GE3172 - ENGLISH LABORATORY</label>
+                    <br>
+                    <select id="select9" class="select1" onclick="optional9(this)">
+                        <option value="choose">Choose </option>
+                        <option value="pass">PASS </option>
+                        <option value="arrear">ARREAR</option>
+                    </select>
+                </div>
+    
+                    <!-- optional div for div 9 -->
+    
+                    <div class="optional9" style="display: none;" id="optional9" onclick="div9()">
+                        <label class="label1" id="lab" for="">GE3172 / GE3172 GRADE:</label>
+                        <br>
+                        <input type="checkbox" value="o" name="9" id="o9" onclick="onlyOne9(this)"> <span class="checkmark">O</span>
+                        <input type="checkbox" value="a+" name="9" id="a+9" onclick="onlyOne9(this)"> <span class="checkmark">A+</span>
+                        <input type="checkbox" value="a" name="9" id="a9" onclick="onlyOne9(this)"> <span class="checkmark">A</span>
+                        <input type="checkbox" value="b+" name="9" id="b+9" onclick="onlyOne9(this)"> <span class="checkmark">B+</span>
+                        <input type="checkbox" value="b" name="9" id="b9" onclick="onlyOne9(this)"> <span class="checkmark">B</span>
+                        <input type="checkbox" value="c" name="9" id="c9" onclick="onlyOne9(this)"> <span class="checkmark">C</span>
+                    </div>
+
+                    
+    <!-- paragraph elements for div 9 -->
+    <p hidden id="res1"></p>
+    <p hidden id="res2"></p>
+    <p hidden id="res3"></p>
+    <p hidden id="res4"></p>
+    <p hidden id="res5"></p>
+    <p hidden id="res6"></p>
+    <p hidden id="res7"></p>
+    <p hidden id="res8"></p>
+    <p hidden id="res9"></p>
+
+    <p hidden id="arrear1"></p>
+    <p hidden id="arrear2"></p>
+    <p hidden id="arrear3"></p>
+    <p hidden id="arrear4"></p>
+    <p hidden id="arrear5"></p>
+    <p hidden id="arrear6"></p>
+    <p hidden id="arrear7"></p>
+    <p hidden id="arrear8"></p>
+    <p hidden id="arrear9"></p>
+
+                    <div class="final" id="final">
+                        <p class="respara">Your GPA is:</p>
+                        
+                        <button class="button" id="calculate">Go</button>
+                        <br>
+                        <br>
+                        <span id="sum"></span>
+                    </div>
+    
+    
+    
+            </div>
+        </div>
+
+    <script src="cse-01.js"></script>
+</body>
+</html> 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="civil-08.css">
+    <title>GPA for CIVIL-08</title>
+</head>
+<body>
+
+
+    <div id="hideDiv" class="form-group">
+        <!-- style="display: none;"  -->
+        <h2 class="sem01">Semester 08</h2>
+        <br>
+        <br>
+     
+         <!-- dropdown options  -->
+    
+    
+        <div class="center-container">
+            <div class="center-content">
+                <div class="div1">
+                    <label for="select1">CE3811  - Project Work/Internship </label>
+                    <br>
+                    <select id="select1" class="select1" onchange="optional(this)">
+                        <br>
+                        <option value="choose">Choose</option>
+                        <option value="pass">PASS</option>
+                        <option value="arrear">ARREAR</option>
+                    </select>
+                </div>
+    
+                <!-- div 01 optional case -->
+    
+                <div class="optional" style="display: none;"id="optional" onclick="div1()">
+                    <label class="label1" id="lab" for="">CE3811 GRADE:</label>
+                    <br>
+                    <input type="checkbox" value="o" name="1" id="o" onclick="onlyOne(this)"> <span class="checkmark">O</span>
+                    <input type="checkbox" value="a+" name="1" id="a+" onclick="onlyOne(this)"> <span class="checkmark">A+</span>
+                    <input type="checkbox" value="a" name="1" id="a" onclick="onlyOne(this)"> <span class="checkmark">A</span>
+                    <input type="checkbox" value="b+" name="1" id="b+" onclick="onlyOne(this)"> <span class="checkmark">B+</span>
+                    <input type="checkbox" value="b" name="1" id="b" onclick="onlyOne(this)"> <span class="checkmark">B</span>
+                    <input type="checkbox" value="c" name="1" id="c" onclick="onlyOne(this)"> <span class="checkmark">C</span>
+                </div>
+                
+    <p hidden id="res1"></p>
+ 
+    <p hidden id="arrear1"></p>
+
+                    <div class="final" id="final">
+                        <p class="respara">Your GPA is:</p>
+                        
+                        <button class="button" id="calculate">Go</button>
+                        <br>
+                        <br>
+                        <span id="sum"></span>
+                    </div>
+    
+    
+    
+            </div>
+        </div>
+
+    <script src="civil-08.js"></script>
+</body>
+</html> 
