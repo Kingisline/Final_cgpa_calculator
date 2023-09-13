@@ -796,13 +796,13 @@ function div7() {
     
 
 
-    const add1 =parseInt(r1 + arrear1);
-    const add2 =parseInt(r2 + arrear2);
-    const add3 =parseInt(r3 + arrear3);
-    const add4 =parseInt(r4 + arrear4);
-    const add5 =parseInt(r5 + arrear5);
-    const add6 =parseInt(r6 + arrear6);
-    const add7 =parseInt(r7 + arrear7);
+    const add1 =parseInt(r1);
+    const add2 =parseInt(r2);
+    const add3 =parseInt(r3);
+    const add4 =parseInt(r4);
+    const add5 =parseInt(r5);
+    const add6 =parseInt(r6);
+    const add7 =parseInt(r7);
     // const add8 =parseInt(r8 + arrear8);
     // const add9 =parseInt(r9 + arrear9);
 
@@ -818,7 +818,7 @@ function div7() {
               
             //   const inputs = [re1,re2,re3,re4,re5,re6,re7,re8,re9];
 
-              const inputs = [r1,r2,r3,r4,r5,r6]
+              const inputs = [r1,r2,r3,r4,r5,r6,r7]
 
               console.log(r1);
             //   console.log(r2);
@@ -873,15 +873,19 @@ function div7() {
                 
             //     sum.innerHTML = " You have to choose the correct input"
             // }
-           
-            if(ad1 == ''|| ad2 == ''|| ad3 == '' || ad4 == '' || ad5 == '' || ad6 == '' || ad7== ''){
-                sum.innerHTML = "Please enter all inputs required";
-            }else if(arrear1 == 0 || arrear2 == 0 || arrear3 == 0 || arrear4 == 0 || arrear5 == 0 || arrear6 == 0 || arrear7 == 0 || isNaN(divide)){
-                sum.style.color = 'red';
-                sum.innerHTML =  + "&#127881;" + "You got an arrear";
+            // const sum = document.getElementById("sum")
+
+            if(isNaN(divide)){
+                sum.style.color = "red"
+                sum.innerHTML = "! Sorry you must have cleared all subjects";
             }else{
-                sum.style.color = "black"
+                sum.style.color = "#45f3ff"
                 sum.innerHTML = divide + "&#127881;";
             }
+           
 
         });
+
+        $('#select1').select2({
+            theme: 'classic' 
+          });

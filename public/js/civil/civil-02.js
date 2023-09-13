@@ -332,7 +332,7 @@ const resu = document.getElementById("res1");
 o.addEventListener('change', function () {
 
 if(o.checked){
-    const a = 3;
+    const a = 2;
     const b = 10;
     const result1 = a * b;
     // const mul =`${result1}`;
@@ -344,7 +344,7 @@ if(o.checked){
 A.addEventListener('change', function () {
 
     if(A.checked){
-        const a = 3;
+        const a = 2;
         const b = 9;
         const result1 = a * b;
         resu.innerHTML = result1;
@@ -355,7 +355,7 @@ A.addEventListener('change', function () {
 a.addEventListener('change', function () {
 
         if(a.checked){
-            const a = 3;
+            const a = 2;
             const b = 8;
             const result1 = a * b;
             resu.innerHTML = result1;      }
@@ -364,7 +364,7 @@ a.addEventListener('change', function () {
 B.addEventListener('change', function () {
 
             if(B.checked){
-                const a = 3;
+                const a = 2;
                 const b = 7;
                 const result1 = a * b;
                 resu.innerHTML = result1;
@@ -374,7 +374,7 @@ B.addEventListener('change', function () {
  b.addEventListener('change', function () {
 
                 if(b.checked){
-                    const a = 3;
+                    const a = 2;
                     const b = 6;
                     const result1 = a * b;
                     resu.innerHTML = result1;
@@ -383,7 +383,7 @@ B.addEventListener('change', function () {
  c.addEventListener('change', function () {
 
   if(c.checked){
-  const a = 3;
+  const a = 2;
   const b = 5;
   const result1 = a * b;
   resu.innerHTML = result1;
@@ -540,7 +540,7 @@ function div3() {
     };
 
 // function div 4
-// credit point for chemeistry is 3
+// credit point for beee is 3
 
 function div4() {
     const o = document.getElementById("o4");
@@ -1083,8 +1083,14 @@ function div9() {
                 sum.style.color = "red"
                 sum.innerHTML = "! Sorry you must have cleared all subjects";
             }else{
-                sum.style.color = "black"
+                sum.style.color = "#45f3ff"
                 sum.innerHTML = divide + "&#127881;";
             }
 
         });
+
+
+
+        $('#select1').select2({
+            theme: 'classic' 
+          });

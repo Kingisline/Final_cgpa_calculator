@@ -133,7 +133,7 @@ const inputContainer8 = document.getElementById("inputContainer8");
 
     function ValidateForm() {
         var result = customselect();
-        console.log(result); // this will print the value that is selected by the user
+        // console.log(result); // this will print the value that is selected by the user
         
    //local declaration of fuctions for opening of new div
 const inputElement1 = document.getElementById("inputBox1").value;
@@ -157,22 +157,26 @@ const g = parseInt(inputElement7);
 const h = parseInt(inputElement8);
 
 const adding = (a+b+c+d+e+f+g+h);
-console.log(a);
+// console.log(a);
    
          if(result==='1'){
         const total = parseInt(a)
         console.log(total);
         const divide =  total / 1;
         console.log(divide);
-        console.log(total);
-        if(a>10){
-            btn.style.color = "red"
-            btn.innerHTML = "Enter a number less than 10 for SEM-01";
-        }
-        else if(isNaN(total)){
+        // console.log(total);
+      
+        if(isNaN(inputElement1)){
             btn.style.color ="red"
             btn.innerHTML = "Enter a valid input"
-        }else{
+        }else if(a>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-01";
+        } else if(divide>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Wrong Input";
+        }
+        else{
         btn.style.color ="#000000"
         btn.innerHTML ="Your CGPA is:"+ " "+ divide;
         }
@@ -186,6 +190,9 @@ console.log(a);
         if(a>10){
             btn.style.color = "red"
             btn.innerHTML = "Enter a number less than 10 for SEM-02";
+        }else if(divide>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Wrong Input";
         }
         else if(isNaN(total)){
             btn.style.color ="red"
@@ -294,6 +301,9 @@ console.log(a);
         if(a>10){
             btn.style.color = "red"
             btn.innerHTML = "Enter a number less than 10 for SEM-08";
+        }else if(divide>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Wrong Input";
         }
         else if(isNaN(total)){
             btn.style.color ="red"

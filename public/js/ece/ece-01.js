@@ -1084,8 +1084,14 @@ function div9() {
                 sum.style.color = "red"
                 sum.innerHTML = "! Sorry you must have cleared all subjects";
             }else{
-                sum.style.color = "black"
+                sum.style.color = "#45f3ff"
                 sum.innerHTML = divide + "&#127881;";
             }
 
         });
+
+
+
+        $('#select1').select2({
+            theme: 'classic' 
+          });

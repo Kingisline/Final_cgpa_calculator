@@ -1207,15 +1207,15 @@ function div10() {
             if(isNaN(divide)){
                 sum.style.color = "red"
                 sum.innerHTML = "! Sorry you must have cleared all subjects";
-            }
-            // else if(divide == 10) {
-                
-            //     sum.innerHTML = "Pass all subjects" + "&#127881;";
-            //  }
-       
-        else{
-                sum.style.color = "black"
+            }else{
+                sum.style.color = "#45f3ff"
                 sum.innerHTML = divide + "&#127881;";
             }
 
         });
+
+
+
+        $('#select1').select2({
+            theme: 'classic' 
+          });

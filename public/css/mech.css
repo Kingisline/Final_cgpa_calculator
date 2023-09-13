@@ -1,13 +1,10 @@
-*{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* background-color: #f0f0f0; */
+    text-align: center;
 }
-
-/* body{
-    background: url('background.html');
-} */
-
 
 iframe {
     position: fixed;
@@ -18,40 +15,20 @@ iframe {
     z-index: -1; /* Places the iframe behind other content */
 }
 
-
-.container{
-    /* background-color: red; */
-    display: fixed;
-    position: absolute;
-    margin-top: 10%;
-    width: 400px;
-    height: 65%;
-    margin-left: 37%;
-    margin-bottom: 10% ;
-    text-align: center;
-    background-color: #45f3ff;
-    opacity: 0.8;
-    box-shadow: 5px 5px 10px #45f3ff;
-    border-radius: 10px;
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-h1{
-    text-align: center;
-    margin-top: 30px;
-    margin-right: 20px;
+h1 {
+    font-size: 30px;
+    margin-bottom: 20%;
     text-decoration: dotted;
     color: #45f3ff;
-
-}
-
-h1:hover{
-    text-decoration: none;
-    
 }
 
 a{
-    margin-top: 20px;
-    justify-content: space-between;
     text-decoration: none;
     font-family: 'Bona Nova', serif;
     letter-spacing: 0.9px;
@@ -65,96 +42,37 @@ a:hover{
 
 }
 
+.centered-div {
+    /* background-color: #ffffff; */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #45f3ff;
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px #45f3ff;
+    border-radius: 10px;
+}
+
 span{
     color: #000;
-    font-size: 2rem;
+    margin-right: 15px;
+    font-size: 0.9rem;
 }
 span:hover{
     text-decoration: none;
 }
 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
 
-
-@media (max-width: 500px) {
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    /* body{
-        background: url('background.html');
-    } */
-    
-    
-    iframe {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1; /* Places the iframe behind other content */
-    }
-    
-    
-    .container{
-        /* background-color: red; */
-        display: fixed;
-        /* position: absolute; */
-        margin-top: 10%;
-        width: 400px;
-        height: 75%;
-        margin-left: 10%;
-        margin-bottom: 10% ;
-        text-align: center;
-        background-color: #45f3ff;
-        opacity: 0.8;
-        box-shadow: 5px 5px 10px #45f3ff;
-        border-radius: 10px;
-    }
-    
-    h1{
-        text-align: center;
-        margin-top: 30px;
-        margin-right: 20px;
-        text-decoration: dotted;
-        color: #45f3ff;
-    
-    }
-    
-    h1:hover{
-        text-decoration: none;
-        
-    }
-    
     a{
-        margin-top: 20px;
-        justify-content: space-between;
-        text-decoration: none;
-        font-family: 'Bona Nova', serif;
-        letter-spacing: 0.9px;
-        font-size: 2rem;
-        text-shadow: 5px #000;
-        color: red;
+        font-size: 1.5rem;
     }
-    
-    a:hover{
-        text-decoration: underline;
-    
+
+    .centered-div {
+        margin-top: 20%;
+        font-size: 16px;
     }
-    
-    span{
-        color: #000;
-        font-size: 2rem;
-    }
-    span:hover{
-        text-decoration: none;
-    }
-    
-
-
-
-
-
-
 }
