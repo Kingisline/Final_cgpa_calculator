@@ -192,6 +192,9 @@ const adding = (a+b+c+d+e+f+g+h);
         console.log(total);
         if(a>10){
             btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-01";
+        }else if(b>10){
+            btn.style.color = "red"
             btn.innerHTML = "Enter a number less than 10 for SEM-02";
         }else if(divide>10){
             btn.style.color = "red"
@@ -213,6 +216,14 @@ const adding = (a+b+c+d+e+f+g+h);
         console.log(total);
         if(a>10){
             btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-01";
+        }
+        else if(b>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-02";
+        }
+        else if(c>10){
+            btn.style.color = "red"
             btn.innerHTML = "Enter a number less than 10 for SEM-03";
         }
         else if(isNaN(total)){
@@ -233,6 +244,18 @@ const adding = (a+b+c+d+e+f+g+h);
             btn.style.color = "red"
             btn.innerHTML = "Enter a number less than 10 for SEM-04";
         }
+        else if(b>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-02";
+        }
+        else if(c>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-03";
+        }
+        else if(d>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-04";
+        }
         else if(isNaN(total)){
             btn.style.color ="red"
             btn.innerHTML = "Enter a valid input"
@@ -248,6 +271,22 @@ const adding = (a+b+c+d+e+f+g+h);
         console.log(divide);
         console.log(total);
         if(a>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-01";
+        }
+        else if(b>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-02";
+        }
+        else if(c>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-03";
+        }
+        else if(d>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-04";
+        }
+        else if(e>10){
             btn.style.color = "red"
             btn.innerHTML = "Enter a number less than 10 for SEM-05";
         }
@@ -267,6 +306,26 @@ const adding = (a+b+c+d+e+f+g+h);
         console.log(total);
         if(a>10){
             btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-01";
+        }
+        else if(b>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-02";
+        }
+        else if(c>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-03";
+        }
+        else if(d>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-04";
+        }
+        else if(e>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-05";
+        }
+        else if(f>10){
+            btn.style.color = "red"
             btn.innerHTML = "Enter a number less than 10 for SEM-06";
         }
         else if(isNaN(total)){
@@ -284,6 +343,30 @@ const adding = (a+b+c+d+e+f+g+h);
         console.log(divide);
         console.log(total);
         if(a>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-01";
+        }
+        else if(b>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-02";
+        }
+        else if(c>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-03";
+        }
+        else if(d>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-04";
+        }
+        else if(e>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-05";
+        }
+        else if(f>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-06";
+        }
+        else if(g>10){
             btn.style.color = "red"
             btn.innerHTML = "Enter a number less than 10 for SEM-07";
         }
@@ -303,8 +386,37 @@ const adding = (a+b+c+d+e+f+g+h);
         console.log(total);
         if(a>10){
             btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-01";
+        }
+        else if(b>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-02";
+        }
+        else if(c>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-03";
+        }
+        else if(d>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-04";
+        }
+        else if(e>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-05";
+        }
+        else if(f>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-06";
+        }
+        else if(g>10){
+            btn.style.color = "red"
+            btn.innerHTML = "Enter a number less than 10 for SEM-07";
+        }
+        else if(h>10){
+            btn.style.color = "red"
             btn.innerHTML = "Enter a number less than 10 for SEM-08";
-        }else if(divide>10){
+        }
+        else if(divide>10){
             btn.style.color = "red"
             btn.innerHTML = "Wrong Input";
         }
@@ -417,37 +529,41 @@ const isExpanded = false;
         expandingDiv.addEventListener("click", toggleSize);
 
 
+// // Get a reference to the audio element
+// const audio = document.getElementById('myAudio');
 
-        // triggering audio when page reloads
-//         const audio = document.getElementById('myAudio');
+// // Initialize a counter for the number of clicks
+// let clickCount = 0;
 
-// // Add an event listener to play the audio when the page loads
-// window.addEventListener('click', () => {
-//     audio.play();
-// });
-
-// Get a reference to the audio element
-const audio = document.getElementById('myAudio');
-
-// Initialize a counter for the number of clicks
-let clickCount = 0;
-
-// Function to handle clicks
-function handleClick() {
+// // Function to handle clicks
+// function handleClick() {
     
-    clickCount++;
+//     clickCount++;
 
-    // Play the audio
+//     // Play the audio
+//     audio.play();
+
+//     // Check if two clicks have occurred, and if so, remove the event listener
+//     if (clickCount === 2) {
+//         document.body.removeEventListener('click', handleClick);
+//     }
+// }
+
+// // Add an event listener to listen for clicks
+// document.body.addEventListener('click', handleClick);
+
+
+// Create an audio element
+const audio = new Audio('/aud/ft-audio.mp3'); // Replace 'click-sound.mp3' with the path to your audio file
+
+// Function to play the sound
+function playClickSound() {
     audio.play();
-
-    // Check if two clicks have occurred, and if so, remove the event listener
-    if (clickCount === 2) {
-        document.body.removeEventListener('click', handleClick);
-    }
 }
 
-// Add an event listener to listen for clicks
-document.body.addEventListener('click', handleClick);
+// Add a click event listener to the entire document
+document.addEventListener('click', playClickSound);
+
 
 
 

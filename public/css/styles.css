@@ -373,10 +373,11 @@ opacity: 0.8;
   
   .divinput span {
     position: absolute;
+    font-family: 300;
     left: 0;
     /* padding: 20px 0px 10px; */
     font-size: 1em;
-    color: #000;
+    /* color: #000; */
     pointer-events: none;
     letter-spacing: 0.05em;
     transition: 0.5s;
