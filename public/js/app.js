@@ -320,7 +320,7 @@ const adding = (a+b+c+d+e+f+g+h);
 
     }
       
-      ValidateForm();
+ValidateForm();
 
 
 const divToExpand = document.querySelector('.content');

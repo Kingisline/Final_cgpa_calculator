@@ -67,7 +67,7 @@ body {
 }
 .content{
     /* background-color: aqua; */
-    width: 100%;  /* Set your desired maximum width */
+    /* width: 100%;  Set your desired maximum width */
     margin: 0 auto; /* Center horizontally */
     padding: 20px 0;     /*  Optional padding for spacing */
     box-sizing: border-box; 
@@ -82,17 +82,17 @@ body {
         border-radius: 10px; /* Round the corners */
         background-color: #fff; /* Set the background color */
         appearance: none; /* Remove the default OS-specific styling (optional) */
-        width: 70%; /* Make the select element width 100% of its container */
+        width: 60%; /* Make the select element width 100% of its container */
         height: 35px;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
  /* Style the custom dropdown arrow */
  .content select::after {
     content: '\25BC'; /* Unicode down arrow character */
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
+    /* position: absolute; */
+    /* top: 50%; */
+    /* right: 10px; */
+    /* transform: translateY(-50%); */
 }
 
 /* Style option elements */
@@ -112,6 +112,7 @@ body {
 /* Style the select element on hover */
 .content select:hover {
     border-color: #555;
+    /* width: 0; */
     /* background-color: yellow; */
     opacity: 0.8;
 }
@@ -133,6 +134,7 @@ body {
 }
 
 .content select:focus option:hover {
+  width: 0;
     background-color: yellow; /* Highlight the hovered option when the select is in focus */
 }
 
@@ -140,6 +142,82 @@ body {
 select, option {
     transition: all 0.3s ease;
 }
+
+@media (max-width: 768px) {
+  .content{
+    /* background-color: aqua; */
+    width: 100%;  /* Set your desired maximum width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px 0;     /*  Optional padding for spacing */
+    box-sizing: border-box; 
+}
+
+.cgpa{
+  /* background-color: aqua; */
+  width: 100%;  /* Set your desired maximum width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px 0;     /*  Optional padding for spacing */
+  box-sizing: border-box; 
+}
+
+.formula{
+  /* background-color: aqua; */
+  width: 100%;  /* Set your desired maximum width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px 0;     /*  Optional padding for spacing */
+  box-sizing: border-box; 
+}
+.footer1{
+  /* background-color: aqua; */
+  width: 100%;  /* Set your desired maximum width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px 0;     /*  Optional padding for spacing */
+  box-sizing: border-box; 
+}
+
+.content select{
+  font-size: 1rem; /* Adjust the font size */
+  font-weight: 400;
+  padding: 5px; /* Add padding for better readability and spacing */ 
+  border: 2px solid #ccc; /* Add a border */
+  border-radius: 10px; /* Round the corners */
+  background-color: #fff; /* Set the background color */
+  appearance: none; /* Remove the default OS-specific styling (optional) */
+  width: 70%; /* Make the select element width 100% of its container */
+  height: 35px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+/* Style the custom dropdown arrow */
+.content select::after {
+content: '\25BC'; /* Unicode down arrow character */
+/* position: absolute; */
+/* top: 50%; */
+/* right: 10px; */
+transform: translateY(-50%);
+}
+
+/* Style option elements */
+.content select option {
+padding: 30px 0; /* Add padding for better spacing */
+font-size: 0.9rem; /* Adjust the font size */ 
+/* background-color: #9400FF; Set the background color */
+background: linear-gradient(to right, red , yellow);
+text-align: left;
+font-weight: 500;
+font-size: 0.9rem;
+border: 2px solid yellow;
+justify-content: left;
+}
+
+
+/* Style the select element on hover */
+.content select:hover {
+border-color: #555;
+/* background-color: yellow; */
+opacity: 0.8;
+}
+}
+
 
 /* to calculate the cgpa styles */
 .cgpa{
@@ -422,7 +500,7 @@ select, option {
     max-width: 600px; /* Set your desired maximum width */
     margin: 0 auto;
     /* text-align: center; */
-    height: 10vh;
+    height: 13vh;
     background-color: yellow;
     display: flex; /* Use flexbox to align child divs */
     justify-content: space-between; /* Space between the child divs */
