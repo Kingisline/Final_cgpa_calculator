@@ -1,0 +1,218 @@
+iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Places the iframe behind other content */
+  }
+  
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .form-group{
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    /* background-color: #EFD595; */
+  }
+  
+  h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20%;
+    text-decoration: dotted;
+    color: #45f3ff;
+  }
+  
+  .div1{
+    background-color: #EFD595;
+    padding: 20px 20px;
+  }
+  
+  .div1 label{
+    font-size: 1rem;
+  }
+  
+  
+  .div1 select {
+    font-size: 1rem;
+    appearance: none; /* Remove default styles (may not work in all browsers) */
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background-color: #40F8FF;
+    font-size: 16px;
+    color: #333;
+    width: 200px;
+  }
+  
+  .div1 select::-ms-expand {
+    display: none; 
+  }
+  .div1 select::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Style when the select is focused */
+  .div1 select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #3498db;
+  }
+  
+  .div1 select option{
+    font-size: 0.8rem;
+    background-color: #EFD595;
+  }
+  
+  .optional{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 19px;
+  
+  }
+  .optional2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 19px;
+  
+  }
+  .optional3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 19px;
+  
+  }
+  .optional4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 19px;
+  
+  
+  }
+  .optional5{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 19px;
+  
+  }
+  .optional6{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 19px;
+  
+  }
+  .optional7{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 19px;
+  
+  }
+  .optional8{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 19px;
+  }
+  .optional9{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 19px;
+  }
+  
+  .label1{
+    color: #40F8FF;
+  }
+  
+  .label1 input{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .checkmark{
+    color: #D67BFF;
+  }
+  
+  
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the checkbox when it's checked */
+  input[type="checkbox"]:checked {
+    background-color: #3498db;
+  }
+  
+  input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #3498db;
+  }
+  
+  /* button styling */
+  /* Basic button styles */
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  
+  .button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1); 
+  }
+  
+  
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+  
+  .span_result{
+  color: #45f3ff;
+  font-size: 1.5rem;
+  }
+  
+  .respara{
+    color: #F0F0F0;
+  }
+  
+  

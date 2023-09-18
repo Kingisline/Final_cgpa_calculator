@@ -14,9 +14,10 @@ const app = express();
 
 app.use(express.static("public"));
 app.use('/css', express.static(__dirname + 'public/css'))
-app.use('/css/civil', express.static(__dirname + 'public/css/civil'))
+// app.use('/css/civil', express.static(__dirname + 'public/css/civil'))
 app.use('/img', express.static(__dirname + 'public/img'))
 app.use('/js', express.static(__dirname + 'public/js'))
+app.use('/aud', express.static(__dirname + 'public/aud'))
 app.use('/html', express.static(__dirname + 'public/html'))
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -75,6 +76,11 @@ app.get("/eee", function(req, res){
 app.get("/cse", function(req, res){
     res.render("cse")
 });
+app.get("/it", function(req, res){
+    res.render("it")
+});
+
+
 // rendering civil from views to publuc/
 app.get("/civil/civil-01", function(req, res){
     res.render("civil/civil-01")
@@ -208,6 +214,15 @@ app.get("/cse/cse-08", function(req, res){
     res.render("cse/cse-08")
 });
 
+// b TEch Informstin technology docs
+app.get("/it/it-01", function(req, res){
+    res.render("it/it-01")
+});
+app.get("/it/it-02", function(req, res){
+    res.render("it/it-02")
+});
+
+
 
 app.post("/", function(req, res) {
 
@@ -313,8 +328,8 @@ app.post("/contact", function(req, res) {
 });
 
 
-app.listen(process.env.PORT || 5050, function(){
-    console.log("Server is Started on port 5050");
+app.listen(process.env.PORT || 1205, function(){
+    console.log("Server is Started on port 1205");
 });
 
 

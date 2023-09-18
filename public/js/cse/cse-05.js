@@ -671,24 +671,6 @@ function div6() {
     const r5 = document.getElementById("res5").innerHTML;
     
     const r6 = document.getElementById("res6").innerHTML;
- 
-    const arrear1 = document.getElementById("arrear1").innerHTML;
-    const arrear2 = document.getElementById("arrear2").innerHTML;
-    const arrear3 = document.getElementById("arrear3").innerHTML;
-    const arrear4 = document.getElementById("arrear4").innerHTML;
-    const arrear5 = document.getElementById("arrear5").innerHTML;
-    const arrear6 = document.getElementById("arrear6").innerHTML;
-
-
-    const add1 =parseInt(r1 + arrear1);
-    const add2 =parseInt(r2 + arrear2);
-    const add3 =parseInt(r3 + arrear3);
-    const add4 =parseInt(r4 + arrear4);
-    const add5 =parseInt(r5 + arrear5);
-    const add6 =parseInt(r6 + arrear6);
-    // const add7 =parseInt(r7 + arrear7);
-    // const add8 =parseInt(r8 + arrear8);
-    // const add9 =parseInt(r9 + arrear9);
 
             // function to change NAN value to 0
 
@@ -709,40 +691,81 @@ function div6() {
                 const result = changeNaN(inputs[i], 0);
                 // console.log(result);
             }
-            // inputs.forEach(function(element){
-            //  const ele =  console.log(element);
-            // //  console.log(ele);
-            // })  
-            // const add1 = parseInt(inputs[0]); 
-            // const add2 = parseInt(inputs[1]); 
-            // const add3 = parseInt(inputs[2]); 
-            // const add4 = parseInt(inputs[3]); 
-            // const add5 = parseInt(inputs[4]); 
-            // const add6 = parseInt(inputs[5]); 
-            // const add10 = parseInt(inputs[9]); 
+          
+            const add1 = parseInt(inputs[0]); 
+            const add2 = parseInt(inputs[1]); 
+            const add3 = parseInt(inputs[2]); 
+            const add4 = parseInt(inputs[3]); 
+            const add5 = parseInt(inputs[4]); 
+            const add6 = parseInt(inputs[5]); 
 
-            const adding = parseInt(add1 + add2 +add3 +add4 + add5+ add6);
-            const di  = parseInt(adding);
-            const divide = adding/20;
-            console.log(divide);
+            const data_result = [add1,add2,add3,add4,add5,add6];
+
+            // Replace NaN with 0 without affecting existing 0 values
+            for (let i = 0; i < data_result.length; i++) {
+              if (isNaN(data_result[i])) {
+                data_result[i] = 0.0;
+              }
+            }
             
-            // console.log(di);
-            // console.log(divide);
-    
-            const sum = document.getElementById("sum")
+            // console.log(data_result)
+            // repace nan with 0 to conform that is there is any chance of arrear
+            const result_1 = data_result[0];
+            const result_2 = data_result[1];
+            const result_3 = data_result[2];
+            const result_4 = data_result[3];
+            const result_5 = data_result[4];
+            const result_6 = data_result[5];
 
-            if(isNaN(divide)){
-                sum.style.color = "red"
-                sum.innerHTML = "! Sorry you must have cleared all subjects";
-            }else{
+
+            console.log(result_1);
+            console.log(result_2);
+            console.log(result_3);
+            console.log(result_4);
+            console.log(result_5);
+            console.log(result_6);
+                                        
+            
+            // adding all the inputs from the user and adding all the values
+                        const adding = parseInt((result_1)+ (result_2) +(result_3)+(result_4)+ (result_5)+ (result_6));
+            
+                        // convering the inputs value into Interger in case of 
+                        const di  = parseInt(adding);
+                        // divide the value with the score
+                        const divide = adding/20;
+                        // console.log(di);
+                        // console.log(di);
+                        // console.log(divide);
+            
+                        // getting the value form the sum
+                        const sum = document.getElementById("sum")
+            
+            
+                        // declare the valu as 5.00
+                        const valu = "5.000000000000000"
+            
+            // by using if statement if the divide is zero
+            if(divide=='0'){
+                sum.style.color = "red";
+                sum.innerHTML = "Enter fields correctly"
+            }
+            //  if the value is less than 5
+            else if(divide<valu){
+                sum.style.color = "red";
+                sum.innerHTML =  divide +"       "+" ! You have arrear";
+            }
+            else if(divide>valu && (result_1 === 0 || result_2 === 0 || result_3 === 0 || result_4 === 0 || result_5 === 0 || result_6 === 0)){
+                sum.style.color = "red";
+                sum.innerHTML =  divide +"       "+" ! You have arrear";
+            }
+            else{
                 sum.style.color = "#45f3ff"
                 sum.innerHTML = divide + "&#127881;";
-            }
+            }  
 
-        });
-
-
-
-        $('#select1').select2({
-            theme: 'classic' 
-          });
+                    });
+            
+            
+                    $('#select1').select2({
+                        theme: 'classic' 
+                      });

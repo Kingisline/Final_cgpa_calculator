@@ -766,12 +766,13 @@ function div7() {
 
     // further calcualtions based on the innerhtml values and returning into the fun
     // const re1 = 0;
+   
     const but = document.getElementById("calculate");
 
-
     but.addEventListener("click", function(){
+   
 
-        const sum = document.getElementById("sum")
+        // const sum = document.getElementById("sum")
 
 
     const r1 = document.getElementById("res1").innerHTML;
@@ -785,17 +786,6 @@ function div7() {
     const r6 = document.getElementById("res6").innerHTML;
     const r7 = document.getElementById("res7").innerHTML;
  
-    const arrear1 = document.getElementById("arrear1").innerHTML;
-    const arrear2 = document.getElementById("arrear2").innerHTML;
-    const arrear3 = document.getElementById("arrear3").innerHTML;
-    const arrear4 = document.getElementById("arrear4").innerHTML;
-    const arrear5 = document.getElementById("arrear5").innerHTML;
-    const arrear6 = document.getElementById("arrear6").innerHTML;
-    const arrear7 = document.getElementById("arrear7").innerHTML;
-
-    
-
-
     const add1 =parseInt(r1);
     const add2 =parseInt(r2);
     const add3 =parseInt(r3);
@@ -803,9 +793,6 @@ function div7() {
     const add5 =parseInt(r5);
     const add6 =parseInt(r6);
     const add7 =parseInt(r7);
-    // const add8 =parseInt(r8 + arrear8);
-    // const add9 =parseInt(r9 + arrear9);
-
             // function to change NAN value to 0
 
             function changeNaN(value, replacement) {
@@ -819,22 +806,6 @@ function div7() {
             //   const inputs = [re1,re2,re3,re4,re5,re6,re7,re8,re9];
 
               const inputs = [r1,r2,r3,r4,r5,r6,r7]
-
-              console.log(r1);
-            //   console.log(r2);
-            //   console.log(r3);
-            //   console.log(r4);
-            //   console.log(r5);
-            //   console.log(r6);
-            //   console.log(r7);
-
-              console.log(arrear1);
-            //   console.log(arrear2);
-            //   console.log(arrear3);
-            //   console.log(arrear4);
-            //   console.log(arrear5);
-            //   console.log(arrear6);
-            //   console.log(arrear7);
               
             //   console.log(inputs)
               for (let i = 0; i < inputs.length; i++) {
@@ -853,39 +824,74 @@ function div7() {
             const ad6 = parseInt(inputs[5]); 
             const ad7 = parseInt(inputs[6]); 
 
-            const adding = parseInt(add1 + add2 +add3 +add4 + add5+ add6+ add7);
-            const di  = parseInt(adding);
-            const divide = adding/23;
-            console.log(divide);
-            
-            // console.log(di);
-            // console.log(divide);
-    
-           
-            // if (isNaN(divide)){
-            //     sum.style.color = "red"
-            //     sum.innerHTML = "! Enter all the inputs correctly";
-            // } else{
-            //     sum.style.color = "black"
-            //     sum.innerHTML = divide + "&#127881;";
-            // }
-            // if(arrear1 == 0 || arrear2 == 0 || arrear3 == 0 || arrear4 == 0 || arrear5 == 0 || arrear6 == 0 || arrear7 == 0){
-                
-            //     sum.innerHTML = " You have to choose the correct input"
-            // }
-            // const sum = document.getElementById("sum")
+            const data_result = [ad1,ad2,ad3,ad4,ad5,ad6,ad7];
 
-            if(isNaN(divide)){
-                sum.style.color = "red"
-                sum.innerHTML = "! Sorry you must have cleared all subjects";
-            }else{
-                sum.style.color = "#45f3ff"
-                sum.innerHTML = divide + "&#127881;";
+            // Replace NaN with 0 without affecting existing 0 values
+            for (let i = 0; i < data_result.length; i++) {
+              if (isNaN(data_result[i])) {
+                data_result[i] = 0.0;
+              }
             }
-           
+            
+            // repace nan with 0 to conform that is there is any chance of arrear
+            const result_1 = data_result[0];
+            const result_2 = data_result[1];
+            const result_3 = data_result[2];
+            const result_4 = data_result[3];
+            const result_5 = data_result[4];
+            const result_6 = data_result[5];
+            const result_7 = data_result[6];
 
-        });
+            console.log(result_1)
+            console.log(result_2)
+            console.log(result_3)
+            console.log(result_4)
+            console.log(result_5)
+            console.log(result_6)
+            console.log(result_7)
+            
+            // adding all the inputs from the user and adding all the values
+                        const adding = parseInt((result_1)+ (result_2) +(result_3)+(result_4)+ (result_5)+ (result_6)+ (result_7));
+            
+                        // convering the inputs value into Interger in case of 
+                        const di  = parseInt(adding);
+                        // divide the value with the score
+                        const divide = adding/23;
+                        // console.log(di);
+                        // console.log(di);
+                        // console.log(divide);
+            
+                        // getting the value form the sum
+                        const sum = document.getElementById("sum")
+            
+            
+                        // declare the valu as 5.00
+                        const valu = "5.00";
 
-        $('#select1').select2({
-            theme: 'classic' 
-          });
+                        // const order_result = (result_1 === 0 || result_2 === 0 || result_3 === 0 || result_4 === 0 || result_5 === 0 || result_6 === 0 || result_7 === 0);
+            
+            
+                        // by using if statement if the divide is zero
+                        if(divide=='0'){
+                            sum.style.color = "red";
+                            sum.innerHTML = "Enter fields correctly"
+                        }
+                        //  if the value is less than 5
+                        else if(divide<valu){
+                            sum.style.color = "red";
+                            sum.innerHTML =  divide +"       "+" ! You have arrear";
+                        }
+                        else if(divide>valu && (result_1 === 0 || result_2 === 0 || result_3 === 0 || result_4 === 0 || result_5 === 0 || result_6 === 0 || result_7 === 0)){
+                            sum.style.color = "red";
+                            sum.innerHTML =  divide +"       "+" ! You have arrear";
+                        }
+                        else{
+                            sum.style.color = "#45f3ff"
+                            sum.innerHTML = divide + "&#127881;";
+                        } 
+                     
+                    });
+
+                    $('#select1').select2({
+                        theme: 'classic' 
+                      });

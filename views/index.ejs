@@ -15,6 +15,21 @@
     <title>CGPA_ CALCULATOR</title>
 <body>
 
+      <!-- dynamic island feature -->
+      <div class="box">
+        <div id="di" class="dynamicisland" onclick="toggleClicked(this)">
+            <div class="sh1" id="sh">
+            <a href="index"><span><ion-icon name="home-outline"></ion-icon></span></a>
+            </div>
+            <div class="sh2">
+            <a href="about"><span><ion-icon name="people-outline"></ion-icon></span></a>
+            </div>
+            <div class="sh3">
+            <a href="contact"><span><ion-icon name="call-outline"></ion-icon></span></a>
+            </div>
+        </div>
+    </div>
+
     <div class="main-container">
         <div class="container">
             <section class="section-1"><h1>GPA CALCUALTOR</h1></section>
@@ -23,14 +38,14 @@
            <div class="content"> 
             <p class="para1"> Select one from the given options: </p>
                 <select onchange="hideDiv()"  class="form-select" category id="selectoptions">
-                    <option class="option" value="choose">Choose your Department</option>
+                    <option id="active"  value="choose">Choose your Department</option>
                     <option class="option" value="civil">B.E. CIVIL ENGINEERING</option>
                     <option class="option" value="mech">B.E. MECHANICAL ENGINEERING</option>
                     <option class="option" value="cse">B.E. COMPUTER SCIENCE ENGINEERING</option>
                     <option class="option" value="ece">B.E. ELECTRONICS COMMUNICATION ENGINEERING</option>
                     <option class="option" value="eee">B.E. ELECTRICAL AND ELECTRONICS ENGINEERING</option>
                     <option class="option" value="aids">B.E. ARTIFICAL INTELLIGENCE</option>
-                    <option class="option" value="cyber-security">B.E. CYBER SECURITY</option>
+                    <option class="option" value="it">B.Tech INFORMATION TECHNOLOGY</option>
                 </select>
             </div>
         </label>
@@ -161,6 +176,12 @@
         </div>
     </div>
 
+    <!-- audio source for dynamic island -->
+    <audio id="myAudio" hidden>
+        <source src="aud/ft-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
 
 
 
@@ -173,6 +194,8 @@
     </div>
 
 </div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 <script src="js/app.js"></script>

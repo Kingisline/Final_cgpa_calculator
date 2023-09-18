@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/mech/mech-01.css">
+    <link rel="stylesheet" href="/css/it/it-01.css">
     <link rel="icon" href="/img/favi.ico">
-    <title>GPA for MECH-02</title>
+    <title>GPA for IT-02</title>
 </head>
 <body>
     <iframe src="/background" scrolling="no" frameborder="0"></iframe>
@@ -71,7 +71,7 @@
                 </div>
                 
                 <div class="div1">
-                    <label for="select3">PH3251- Materials Science </label>
+                    <label for="select3">PH3256 - Physics for Information Science</label>
                  <br>
                     <select id="select1" class="select1" onchange="optional3(this)">
                         <option value="choose">Choose </option>
@@ -82,7 +82,7 @@
                 <!-- optional div 3 -->
     
                  <div class="optional3" style="display: none;" id="optional3" onclick="div3()">
-                    <label class="label1" id="lab" for="">PH3251 GRADE:</label>
+                    <label class="label1" id="lab" for="">PH3256 / PH3256 GRADE:</label>
                     <br>
                     <input type="checkbox" value="o" name="3" id="o3" onclick="onlyOne3(this)"> <span class="checkmark">O</span>
                     <input type="checkbox" value="a+" name="3" id="a+3" onclick="onlyOne3(this)"> <span class="checkmark">A+</span>
@@ -163,8 +163,7 @@
                 </div>
                              
                 <div class="div1">
-                    <label for="select7">BE3271 - Basic Electrical and Electronics
-                        Engineering Laboratory</label>
+                    <label for="select7">CS3271 - Programming in C Laboratory</label>
                     <br>
                     <select id="select7" class="select1" onclick="optional7(this)">
                         <option value="choose">Choose </option>
@@ -176,7 +175,7 @@
                     <!-- optional div for div 7 -->
     
                     <div class="optional7" style="display: none;" id="optional7" onclick="div7()">
-                        <label class="label1" id="lab" for="">BE3271 GRADE:</label>
+                        <label class="label1" id="lab" for="">CS3271 / CS3271 GRADE:</label>
                         <br>
                         <input type="checkbox" value="o" name="7" id="o7" onclick="onlyOne7(this)"> <span class="checkmark">O</span>
                         <input type="checkbox" value="a+" name="7" id="a+7" onclick="onlyOne7(this)"> <span class="checkmark">A+</span>
@@ -232,6 +231,31 @@
                         <input type="checkbox" value="b" name="9" id="b9" onclick="onlyOne9(this)"> <span class="checkmark">B</span>
                         <input type="checkbox" value="c" name="9" id="c9" onclick="onlyOne9(this)"> <span class="checkmark">C</span>
                     </div>
+
+                    <div class="div1">
+                        <label for="select10">CS3251 - Programming in C </label>
+                        <br>
+                        <select id="select10" class="select1" onclick="optional10(this)" >
+                            
+                            <option value="choose">Choose </option>
+                            <option value="pass">PASS </option>
+                            <option value="arrear">ARREAR </option>
+                        </select>
+                    </div>
+        
+                     <!-- optional div for div 10 -->
+        
+                     <div class="optional10" style="display: none;" id="optional10" onclick="div10()">
+                        <label class="label1" id="lab" for="">CS3251 / CS3251 GRADE:</label>
+                        <br>
+                        <input type="checkbox" value="o" name="10" id="o10" onclick="onlyOne10(this)"> <span class="checkmark">O</span>
+                        <input type="checkbox" value="a+" name="10" id="a+10" onclick="onlyOne10(this)"> <span class="checkmark">A+</span>
+                        <input type="checkbox" value="a" name="10" id="a10" onclick="onlyOne10(this)"> <span class="checkmark">A</span>
+                        <input type="checkbox" value="b+" name="10" id="b+10" onclick="onlyOne10(this)"> <span class="checkmark">B+</span>
+                        <input type="checkbox" value="b" name="10" id="b10" onclick="onlyOne10(this)"> <span class="checkmark">B</span>
+                        <input type="checkbox" value="c" name="10" id="c10" onclick="onlyOne10(this)"> <span class="checkmark">C</span>
+                    </div>
+
                     
     <!-- paragraph elements for div 9 -->
     <p hidden id="res1"></p>
@@ -243,19 +267,7 @@
     <p hidden id="res7"></p>
     <p hidden id="res8"></p>
     <p hidden id="res9"></p>
-    <!-- <p hidden id="res10"></p> -->
-
-    <p hidden id="arrear1"></p>
-    <p hidden id="arrear2"></p>
-    <p hidden id="arrear3"></p>
-    <p hidden id="arrear4"></p>
-    <p hidden id="arrear5"></p>
-    <p hidden id="arrear6"></p>
-    <p hidden id="arrear7"></p>
-    <p hidden id="arrear8"></p>
-    <p hidden id="arrear9"></p>
-    <!-- <p hidden id="arrear10"></p> -->
-
+    <p hidden id="res10"></p>
 
                     <div class="final" id="final">
                         <p class="respara">Your GPA is:</p>
@@ -273,6 +285,6 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/js/mech/mech-02.js"></script>
+    <script src="/js/it/it-02.js"></script>
 </body>
 </html> 

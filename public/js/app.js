@@ -14,7 +14,10 @@ function hideDiv(){
         window.open("ECE", "_blank");
     }else if (selectvalue === "eee"){
         window.open("EEE", "_blank");
+    }else if (selectvalue === "it"){
+        window.open("it", "_blank");
     }
+
 
 }
 
@@ -323,7 +326,7 @@ const adding = (a+b+c+d+e+f+g+h);
 const divToExpand = document.querySelector('.content');
 
 
-let isExpanded = false;
+// let isExpanded = false;
 
 divToExpand.addEventListener('mouseenter', function () {
     if (!isExpanded) {
@@ -367,3 +370,84 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000); // Adjust the delay as needed
   });
   
+
+
+//   dyanmic island 
+function toggleClicked(element) {
+             
+    element.classList.add(".dynamicisland:hover");
+        setTimeout(function() {
+           element.classList.add("dynamicisland");
+       }, 5000);
+   }
+
+
+   setTimeout(function () {
+    const expandingDiv = document.querySelector(".dynamicisland");
+    expandingDiv.style.width = "220px"; // Change the width to expand
+    expandingDiv.style.height = "40px"; // Change the height to expand
+}, 5000); 
+
+
+const expandingDiv = document.getElementById("di");
+
+// Store the original width and height
+const originalWidth = expandingDiv.offsetWidth;
+const originalHeight = expandingDiv.offsetHeight;
+
+// Flag to track the current state (expanded or not)
+const isExpanded = false;
+
+        function toggleSize() {
+            if (isExpanded) {
+                // If currently expanded, reset to original size
+                expandingDiv.style.width = originalWidth + "px";
+                expandingDiv.style.height = originalHeight + "px";
+            } else {
+                // If not expanded, set to a larger size
+                expandingDiv.style.width = "160px";
+                expandingDiv.style.height = "40px";
+            }
+
+            // Toggle the flag
+            isExpanded = !isExpanded;
+        }
+
+        // Add a click event listener to the div
+        expandingDiv.addEventListener("click", toggleSize);
+
+
+
+        // triggering audio when page reloads
+//         const audio = document.getElementById('myAudio');
+
+// // Add an event listener to play the audio when the page loads
+// window.addEventListener('click', () => {
+//     audio.play();
+// });
+
+// Get a reference to the audio element
+const audio = document.getElementById('myAudio');
+
+// Initialize a counter for the number of clicks
+let clickCount = 0;
+
+// Function to handle clicks
+function handleClick() {
+    
+    clickCount++;
+
+    // Play the audio
+    audio.play();
+
+    // Check if two clicks have occurred, and if so, remove the event listener
+    if (clickCount === 2) {
+        document.body.removeEventListener('click', handleClick);
+    }
+}
+
+// Add an event listener to listen for clicks
+document.body.addEventListener('click', handleClick);
+
+
+
