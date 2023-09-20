@@ -95,7 +95,7 @@ const inputContainer8 = document.getElementById("inputContainer8");
         inputContainer3.style.display = "block";
         inputContainer4.style.display = "block";
         inputContainer5.style.display = "block";
-        inputContainer6.style.display = "block";
+        inputContainer6.style.display = "none";
         inputContainer7.style.display = "none";
         inputContainer8.style.display = "none";
     }else if(selectedValue === "6"){
@@ -149,34 +149,38 @@ const inputElement7 = document.getElementById("inputBox7").value;
 const inputElement8 = document.getElementById("inputBox8").value;
 const btn = document.getElementById("cgpa-calculate");
 
+
+
 // recorrecting the value fromthe input box
-const a = parseInt(inputElement1);
-const b = parseInt(inputElement2);
-const c = parseInt(inputElement3);
-const d = parseInt(inputElement4);
-const e = parseInt(inputElement5);
-const f = parseInt(inputElement6);
-const g = parseInt(inputElement7);
-const h = parseInt(inputElement8);
+const a = parseFloat(inputElement1);
+const b = parseFloat(inputElement2);
+const c = parseFloat(inputElement3);
+const d = parseFloat(inputElement4);
+const e = parseFloat(inputElement5);
+const f = parseFloat(inputElement6);
+const g = parseFloat(inputElement7);
+const h = parseFloat(inputElement8);
+
+
 
 const adding = (a+b+c+d+e+f+g+h);
 // console.log(a);
    
          if(result==='1'){
-        const total = parseInt(a)
+        const total = parseFloat(a)
         console.log(total);
-        const divide =  total / 1;
+        const divide =  parseFloat(total / 1);
         console.log(divide);
         // console.log(total);
       
         if(isNaN(inputElement1)){
-            btn.style.color ="red"
+            btn.style.color ="yellow"
             btn.innerHTML = "Enter a valid input"
         }else if(a>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
         } else if(divide>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Wrong Input";
         }
         else{
@@ -185,23 +189,23 @@ const adding = (a+b+c+d+e+f+g+h);
         }
       
     }else if(result==='2'){
-        const total = parseInt(a+b)
+        const total = parseFloat(a+b)
         console.log(total);
-        const divide =  total / 2;
+        const divide = parseFloat( total / 2);
         console.log(divide);
         console.log(total);
         if(a>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
         }else if(b>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-02";
         }else if(divide>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Wrong Input";
         }
         else if(isNaN(total)){
-            btn.style.color ="red"
+            btn.style.color ="yellow"
             btn.innerHTML = "Enter a valid input"
         }else{
         btn.style.color ="black"
@@ -209,25 +213,25 @@ const adding = (a+b+c+d+e+f+g+h);
         }
       
     }else if(result==='3'){
-        const total = parseInt(a+b+c)
+        const total = parseFloat(a+b+c)
         console.log(total);
-        const divide =  total / 3;
+        const divide =   parseFloat(total / 3);
         console.log(divide);
         console.log(total);
         if(a>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
         }
         else if(b>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-02";
         }
         else if(c>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-03";
         }
         else if(isNaN(total)){
-            btn.style.color ="red"
+            btn.style.color ="yellow"
             btn.innerHTML = "Enter a valid input"
         }else{
         btn.style.color ="black"
@@ -235,29 +239,29 @@ const adding = (a+b+c+d+e+f+g+h);
         }
       
     }else if(result==='4'){
-        const total = parseInt(a+b+c+d)
+        const total = parseFloat(a+b+c+d)
         console.log(total);
-        const divide =  total / 4;
+        const divide =  parseFloat(total / 4);
         console.log(divide);
         console.log(total);
         if(a>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-04";
         }
         else if(b>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-02";
         }
         else if(c>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-03";
         }
         else if(d>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-04";
         }
         else if(isNaN(total)){
-            btn.style.color ="red"
+            btn.style.color ="yellow"
             btn.innerHTML = "Enter a valid input"
         }else{
         btn.style.color ="black"
@@ -265,33 +269,32 @@ const adding = (a+b+c+d+e+f+g+h);
         }
       
     }else if(result==='5'){
-        const total = parseInt(a+b+c+d+e)
+        const total = parseFloat(a+b+c+d+e)
         console.log(total);
-        const divide =  total / 5;
+        const divide =  parseFloat(total/5);
         console.log(divide);
-        console.log(total);
         if(a>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
         }
         else if(b>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-02";
         }
         else if(c>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-03";
         }
         else if(d>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-04";
         }
         else if(e>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-05";
         }
         else if(isNaN(total)){
-            btn.style.color ="red"
+            btn.style.color ="yellow"
             btn.innerHTML = "Enter a valid input"
         }else{
         btn.style.color ="black"
@@ -299,37 +302,37 @@ const adding = (a+b+c+d+e+f+g+h);
         }
       
     }else if(result==='6'){
-        const total = parseInt(a+b+c+d+e+f)
+        const total = parseFloat(a+b+c+d+e+f)
         console.log(total);
-        const divide =  total / 6;
+        const divide =  parseFloat(total / 6);
         console.log(divide);
         console.log(total);
         if(a>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
         }
         else if(b>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-02";
         }
         else if(c>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-03";
         }
         else if(d>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-04";
         }
         else if(e>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-05";
         }
         else if(f>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-06";
         }
         else if(isNaN(total)){
-            btn.style.color ="red"
+            btn.style.color ="yellow"
             btn.innerHTML = "Enter a valid input"
         }else{
         btn.style.color ="black"
@@ -337,41 +340,41 @@ const adding = (a+b+c+d+e+f+g+h);
         }
       
     }else if(result==='7'){
-        const total = parseInt(a+b+c+d+e+f+g)
+        const total = parseFloat(a+b+c+d+e+f+g)
         console.log(total);
-        const divide =  total / 7;
+        const divide =  parseFloat(total / 7);
         console.log(divide);
         console.log(total);
         if(a>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
         }
         else if(b>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-02";
         }
         else if(c>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-03";
         }
         else if(d>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-04";
         }
         else if(e>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-05";
         }
         else if(f>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-06";
         }
         else if(g>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-07";
         }
         else if(isNaN(total)){
-            btn.style.color ="red"
+            btn.style.color ="yellow"
             btn.innerHTML = "Enter a valid input"
         }else{
         btn.style.color ="black"
@@ -379,49 +382,49 @@ const adding = (a+b+c+d+e+f+g+h);
         }
       
     }else if(result==='8'){
-        const total = parseInt(a+b+c+d+e+f+g+h)
+        const total = parseFloat(a+b+c+d+e+f+g+h)
         console.log(total);
-        const divide =  total / 8;
+        const divide =  parseFloat(total / 8);
         console.log(divide);
         console.log(total);
         if(a>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
         }
         else if(b>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-02";
         }
         else if(c>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-03";
         }
         else if(d>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-04";
         }
         else if(e>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-05";
         }
         else if(f>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-06";
         }
         else if(g>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-07";
         }
         else if(h>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-08";
         }
         else if(divide>10){
-            btn.style.color = "red"
+            btn.style.color = "yellow"
             btn.innerHTML = "Wrong Input";
         }
         else if(isNaN(total)){
-            btn.style.color ="red"
+            btn.style.color ="yellow"
             btn.innerHTML = "Enter a valid input"
         }else{
         btn.style.color ="black"
@@ -435,18 +438,18 @@ const adding = (a+b+c+d+e+f+g+h);
 ValidateForm();
 
 
-const divToExpand = document.querySelector('.content');
+// const divToExpand = document.querySelector('.content');
 
 
-// let isExpanded = false;
+// // let isExpanded = false;
 
-divToExpand.addEventListener('mouseenter', function () {
-    if (!isExpanded) {
+// divToExpand.addEventListener('mouseenter', function () {
+//     if (!isExpanded) {
         
-        divToExpand.classList.add('expanded');
-        isExpanded = true;
-    }
-});
+//         divToExpand.classList.add('expanded');
+//         isExpanded = true;
+//     }
+// });
 
 
 // to delay the bottom to up transttin using anchor tag
@@ -460,7 +463,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault(); // Prevent the default navigation behavior
   
       // Add a delay (in milliseconds) before navigating to the link
-      var delay = 1000; // 1 seconds (you can adjust this value)
+      var delay = 500; // 1 seconds (you can adjust this value)
   
       setTimeout(function () {
         // Redirect to the link after the delay
@@ -554,7 +557,7 @@ const isExpanded = false;
 
 
 // Create an audio element
-const audio = new Audio('/aud/ft-audio.mp3'); // Replace 'click-sound.mp3' with the path to your audio file
+const audio = new Audio('/aud/ft-audio.mp'); // Replace 'click-sound.mp3' with the path to your audio file
 
 // Function to play the sound
 function playClickSound() {
