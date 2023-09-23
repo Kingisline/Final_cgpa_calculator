@@ -557,7 +557,7 @@ const isExpanded = false;
 
 
 // Create an audio element
-const audio = new Audio('/aud/ft-audio.mp'); // Replace 'click-sound.mp3' with the path to your audio file
+const audio = new Audio('/aud/ft-audio.mp3'); // Replace 'click-sound.mp3' with the path to your audio file
 
 // Function to play the sound
 function playClickSound() {

@@ -89,6 +89,9 @@ body {
 
 .content select{
   text-align: center;
+  outline: none;
+  border: none;
+  /* background: transparent; */
         margin: 0 auto;
         width: 60%;
         font-size: 1rem; /* Adjust the font size */
