@@ -8,7 +8,7 @@ function optional(elem){
     }
     else if(elem.value == "arrear"){
         const sum = document.getElementById("arrear1");
-        sum.innerHTML = 0;
+        // sum.innerHTML = 0;
         document.getElementById("optional").style.display = "none";
      } else{
         document.getElementById("optional").style.display = "none";
@@ -21,7 +21,7 @@ function optional2(elem){
         document.getElementById("optional2").style.display = "block";
     }else if(elem.value == "arrear"){
         const sum = document.getElementById("arrear2");
-        sum.innerHTML = 0;
+        // sum.innerHTML = 0;
         document.getElementById("optional2").style.display = "none";
      } 
     else{
@@ -35,7 +35,7 @@ function optional3(elem){
         document.getElementById("optional3").style.display = "block";
     }else if(elem.value == "arrear"){
         const sum = document.getElementById("arrear3");
-        sum.innerHTML = 0;
+        // sum.innerHTML = 0;
         document.getElementById("optional3").style.display = "none";
      }
      else{
@@ -49,7 +49,7 @@ function optional4(elem){
         document.getElementById("optional4").style.display = "block";
     }else if(elem.value == "arrear"){
         const sum = document.getElementById("arrear4");
-        sum.innerHTML = 0;
+        // sum.innerHTML = 0;
         document.getElementById("optional4").style.display = "none";
      }
      else{
@@ -63,7 +63,7 @@ function optional5(elem){
         document.getElementById("optional5").style.display = "block";
     }else if(elem.value == "arrear"){
         const sum = document.getElementById("arrear5");
-        sum.innerHTML = 0;
+        // sum.innerHTML = 0;
         document.getElementById("optional5").style.display = "none";
      } 
     else{
@@ -78,7 +78,7 @@ function optional6(elem){
         document.getElementById("optional6").style.display = "block";
     }else if(elem.value == "arrear"){
         const sum = document.getElementById("arrear6");
-        sum.innerHTML = 0;
+        // sum.innerHTML = 0;
         document.getElementById("optional6").style.display = "none";
      } 
     else{
@@ -93,7 +93,7 @@ function optional7(elem){
         document.getElementById("optional7").style.display = "block";
     }else if(elem.value == "arrear"){
         const sum = document.getElementById("arrear7");
-        sum.innerHTML = 0;
+        // sum.innerHTML = 0;
         document.getElementById("optional7").style.display = "none";
      } 
     else{
@@ -108,7 +108,7 @@ function optional8(elem){
         document.getElementById("optional8").style.display = "block";
     }else if(elem.value == "arrear"){
         const sum = document.getElementById("arrear8");
-        sum.innerHTML = 0;
+        // sum.innerHTML = 0;
         document.getElementById("optional8").style.display = "none";
      } 
     else{
@@ -123,7 +123,7 @@ function optional9(elem){
         document.getElementById("optional9").style.display = "block";
     }else if(elem.value == "arrear"){
         const sum = document.getElementById("arrear9");
-        sum.innerHTML = 0;
+        // sum.innerHTML = 0;
         document.getElementById("optional9").style.display = "none";
      } 
     else{
@@ -328,6 +328,8 @@ const B = document.getElementById("b+");
 const b = document.getElementById("b");
 const c = document.getElementById("c");
 const resu = document.getElementById("res1");
+const cred = document.getElementById("cre1");
+
 
 o.addEventListener('change', function () {
 
@@ -335,6 +337,7 @@ if(o.checked){
     const a = 3;
     const b = 10;
     const result1 = a * b;
+    cred.innerHTML = a
     // const mul =`${result1}`;
     resu.innerHTML = result1;
      
@@ -347,6 +350,7 @@ A.addEventListener('change', function () {
         const a = 3;
         const b = 9;
         const result1 = a * b;
+        cred.innerHTML = a
         resu.innerHTML = result1;
     }
     });
@@ -358,6 +362,7 @@ a.addEventListener('change', function () {
             const a = 3;
             const b = 8;
             const result1 = a * b;
+            cred.innerHTML = a
             resu.innerHTML = result1;      }
         });
 
@@ -367,6 +372,7 @@ B.addEventListener('change', function () {
                 const a = 3;
                 const b = 7;
                 const result1 = a * b;
+                cred.innerHTML = a
                 resu.innerHTML = result1;
             }
             });
@@ -377,6 +383,7 @@ B.addEventListener('change', function () {
                     const a = 3;
                     const b = 6;
                     const result1 = a * b;
+                    cred.innerHTML = a
                     resu.innerHTML = result1;
                 }
                 });
@@ -386,6 +393,7 @@ B.addEventListener('change', function () {
   const a = 3;
   const b = 5;
   const result1 = a * b;
+  cred.innerHTML = a
   resu.innerHTML = result1;
   }
 });
@@ -404,6 +412,7 @@ const B = document.getElementById("b+2");
 const b = document.getElementById("b2");
 const c = document.getElementById("c2");
 const res = document.getElementById("res2");
+const cred = document.getElementById("cre2");
 
 o.addEventListener('change', function() {
 
@@ -411,6 +420,7 @@ if(o.checked){
     const a = 4;
     const b = 10;
     const result2 = a * b;
+    cred.innerHTML = a
     res.innerHTML = result2;
 }
 });
@@ -421,6 +431,7 @@ if(A.checked){
     const a = 4;
     const b = 9;
     const result2 = a * b;
+    cred.innerHTML = a
     res.innerHTML = result2;
 }
 });
@@ -432,6 +443,7 @@ a.addEventListener('change', function () {
         const a = 4;
         const b = 8;
         const result2 = a * b;
+        cred.innerHTML = a
         res.innerHTML = result2;
 }
     });
@@ -442,6 +454,7 @@ B.addEventListener('change', function () {
         const a = 4;
         const b = 7;
         const result2 = a * b;
+        cred.innerHTML = a
         res.innerHTML = result2;
 }
 });
@@ -452,6 +465,7 @@ B.addEventListener('change', function () {
         const a = 4;
         const b = 6;
         const result2 = a * b;
+        cred.innerHTML = a
         res.innerHTML = result2;
 }
 });
@@ -461,6 +475,7 @@ B.addEventListener('change', function () {
         const a = 4;
         const b = 5;
         const result2 = a * b;
+        cred.innerHTML = a
         res.innerHTML = result2;
 }
 });
@@ -477,6 +492,7 @@ function div3() {
     const b = document.getElementById("b3");
     const c = document.getElementById("c3");
     const res = document.getElementById("res3");
+    const cred = document.getElementById("cre3");
     
     o.addEventListener('change', function() {
     
@@ -484,6 +500,7 @@ function div3() {
         const a = 3;
         const b = 10;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -494,6 +511,7 @@ function div3() {
         const a = 3;
         const b = 9;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -505,6 +523,7 @@ function div3() {
             const a = 3;
             const b = 8;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
         });
@@ -515,6 +534,7 @@ function div3() {
             const a = 3;
             const b = 7;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -525,6 +545,7 @@ function div3() {
             const a = 3;
             const b = 6;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -534,6 +555,7 @@ function div3() {
             const a = 3;
             const b = 5;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -550,6 +572,7 @@ function div4() {
     const b = document.getElementById("b4");
     const c = document.getElementById("c4");
     const res = document.getElementById("res4");
+    const cred = document.getElementById("cre4");
     
     o.addEventListener('change', function() {
     
@@ -557,6 +580,7 @@ function div4() {
         const a = 3;
         const b = 10;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -567,6 +591,7 @@ function div4() {
         const a = 3;
         const b = 9;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -578,6 +603,7 @@ function div4() {
             const a = 3;
             const b = 8;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
         });
@@ -588,6 +614,7 @@ function div4() {
             const a = 3;
             const b = 7;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -598,6 +625,7 @@ function div4() {
             const a = 3;
             const b = 6;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -607,6 +635,7 @@ function div4() {
             const a = 3;
             const b = 5;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -623,6 +652,7 @@ function div5() {
     const b = document.getElementById("b5");
     const c = document.getElementById("c5");
     const res = document.getElementById("res5");
+    const cred = document.getElementById("cre5");
     
     o.addEventListener('change', function() {
     
@@ -630,6 +660,7 @@ function div5() {
         const a = 1;
         const b = 10;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -640,6 +671,7 @@ function div5() {
         const a = 1;
         const b = 9;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -651,6 +683,7 @@ function div5() {
             const a = 1;
             const b = 8;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
         });
@@ -661,6 +694,7 @@ function div5() {
             const a = 1;
             const b = 7;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -671,6 +705,7 @@ function div5() {
             const a = 1;
             const b = 6;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -680,6 +715,7 @@ function div5() {
             const a = 1;
             const b = 5;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -697,6 +733,7 @@ function div6() {
     const b = document.getElementById("b6");
     const c = document.getElementById("c6");
     const res = document.getElementById("res6");
+    const cred = document.getElementById("cre6");
     
     o.addEventListener('change', function() {
     
@@ -704,6 +741,7 @@ function div6() {
         const a = 3;
         const b = 10;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -714,6 +752,7 @@ function div6() {
         const a = 3;
         const b = 9;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -725,6 +764,7 @@ function div6() {
             const a = 3;
             const b = 8;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
         });
@@ -735,6 +775,7 @@ function div6() {
             const a = 3;
             const b = 7;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -745,6 +786,7 @@ function div6() {
             const a = 3;
             const b = 6;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -754,6 +796,7 @@ function div6() {
             const a = 3;
             const b = 5;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -770,6 +813,7 @@ function div7() {
     const b = document.getElementById("b7");
     const c = document.getElementById("c7");
     const res = document.getElementById("res7");
+    const cred = document.getElementById("cre7");
     
     o.addEventListener('change', function() {
     
@@ -777,6 +821,7 @@ function div7() {
         const a = 2;
         const b = 10;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -787,6 +832,7 @@ function div7() {
         const a = 2;
         const b = 9;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -798,6 +844,7 @@ function div7() {
             const a = 2;
             const b = 8;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
         });
@@ -808,6 +855,7 @@ function div7() {
             const a = 2;
             const b = 7;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -818,6 +866,7 @@ function div7() {
             const a = 2;
             const b = 6;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -827,6 +876,7 @@ function div7() {
             const a = 2;
             const b = 5;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -843,6 +893,7 @@ function div8() {
     const b = document.getElementById("b8");
     const c = document.getElementById("c8");
     const res = document.getElementById("res8");
+    const cred = document.getElementById("cre8");
     
     o.addEventListener('change', function() {
     
@@ -850,6 +901,7 @@ function div8() {
         const a = 2;
         const b = 10;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -860,6 +912,7 @@ function div8() {
         const a = 2;
         const b = 9;
         const result = a * b;
+        cred.innerHTML = a
         res.innerHTML = result;
     }
     });
@@ -871,6 +924,7 @@ function div8() {
             const a = 2;
             const b = 8;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
         });
@@ -881,6 +935,7 @@ function div8() {
             const a = 2;
             const b = 7;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -891,6 +946,7 @@ function div8() {
             const a = 2;
             const b = 6;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -900,6 +956,7 @@ function div8() {
             const a = 2;
             const b = 5;
             const result = a * b;
+            cred.innerHTML = a
             res.innerHTML = result;
     }
     });
@@ -916,6 +973,7 @@ function div9() {
     const b = document.getElementById("b9");
     const c = document.getElementById("c9");
     const res9 = document.getElementById("res9");
+    const cred = document.getElementById("cre9");
 
     
     o.addEventListener('change', function () {
@@ -924,6 +982,7 @@ function div9() {
         const a = 1;
         const b = 10;
         const result9 = a * b;
+        cred.innerHTML = a
         res9.innerHTML = result9;
     }
     });
@@ -934,6 +993,7 @@ function div9() {
         const a = 1;
         const b = 9;
         const result9 = a * b;
+        cred.innerHTML = a
         res9.innerHTML = result9;
     }
     });
@@ -945,6 +1005,7 @@ function div9() {
             const a = 1;
             const b = 8;
             const result9 = a * b;
+            cred.innerHTML = a
             res9.innerHTML = result9;
     }
         });
@@ -955,6 +1016,7 @@ function div9() {
             const a = 1;
             const b = 7;
             const result9 = a * b;
+            cred.innerHTML = a
             res9.innerHTML = result9;
     }
     });
@@ -965,6 +1027,7 @@ function div9() {
             const a = 1;
             const b = 6;
             const result9 = a * b;
+            cred.innerHTML = a
             res9.innerHTML = result9;
     }
     });
@@ -974,6 +1037,7 @@ function div9() {
             const a = 1;
             const b = 5;
             const result9 = a * b;
+            cred.innerHTML = a
             res9.innerHTML = result9;
     }
     });
@@ -1001,7 +1065,7 @@ function div9() {
     const r6 = document.getElementById("res6").innerHTML;
     const r7 = document.getElementById("res7").innerHTML;
 
-    const r8 = document.getElementById("res7").innerHTML;
+    const r8 = document.getElementById("res8").innerHTML;
     const r9 = document.getElementById("res9").innerHTML;
 
             // function to change NAN value to 0
@@ -1014,24 +1078,20 @@ function div9() {
                 }
             }
               
-            //   const inputs = [re1,re2,re3,re4,re5,re6,re7,re8,re9];
-
               const inputs = [r1,r2,r3,r4,r5,r6,r7,r8,r9]
-              
             //   console.log(inputs)
               for (let i = 0; i < inputs.length; i++) {
                 const result = changeNaN(inputs[i], 0);
-                // console.log(result);
             }
-            const add1 = parseInt(inputs[0]); 
-            const add2 = parseInt(inputs[1]); 
-            const add3 = parseInt(inputs[2]); 
-            const add4 = parseInt(inputs[3]); 
-            const add5 = parseInt(inputs[4]); 
-            const add6 = parseInt(inputs[5]); 
-            const add7 = parseInt(inputs[6]); 
-            const add8 = parseInt(inputs[7]); 
-            const add9 = parseInt(inputs[8]); 
+            const add1 = parseFloat(inputs[0]); 
+            const add2 = parseFloat(inputs[1]); 
+            const add3 = parseFloat(inputs[2]); 
+            const add4 = parseFloat(inputs[3]); 
+            const add5 = parseFloat(inputs[4]); 
+            const add6 = parseFloat(inputs[5]); 
+            const add7 = parseFloat(inputs[6]); 
+            const add8 = parseFloat(inputs[7]); 
+            const add9 = parseFloat(inputs[8]); 
 
             const data_result = [add1,add2,add3,add4,add5,add6,add7,add8,add9];
 
@@ -1053,18 +1113,103 @@ function div9() {
             const result_7 = data_result[6];
             const result_8 = data_result[7];
             const result_9 = data_result[8];
-                                        
+
+           
+            // console.log(result_1);
+            // console.log(result_2);
+            // console.log(result_3);
+            // console.log(result_4);
+            // console.log(result_5);
+            // console.log(result_6);
+            // console.log(result_7);
+            // console.log(result_8);
+            // console.log(result_9);
+
+
+
+
+
+            // credit adding from cre1
+            const cre1 = document.getElementById("cre1").innerHTML;
+            const cre2 = document.getElementById("cre2").innerHTML;
+            const cre3 = document.getElementById("cre3").innerHTML;
+            const cre4 = document.getElementById("cre4").innerHTML;
+            const cre5 = document.getElementById("cre5").innerHTML;
+            const cre6 = document.getElementById("cre6").innerHTML;
+            const cre7 = document.getElementById("cre7").innerHTML;
+            const cre8 = document.getElementById("cre8").innerHTML;
+            const cre9 = document.getElementById("cre9").innerHTML;
+
+            const cred_adding = (cre1 + cre2 + cre3 + cre4 + cre5 + cre6 + cre7 + cre8 + cre9);
+
+            const cred_loop = [cre1,cre2,cre3,cre4,cre5,cre6,cre7,cre8,cre9]
+            //   console.log(inputs)
+              for (let i = 0; i < cred_loop.length; i++) {
+                const result = changeNaN(cred_loop[i], 0);
+            }
+                               
+            const cred1 = parseFloat(cred_loop[0]); 
+            const cred2 = parseFloat(cred_loop[1]); 
+            const cred3 = parseFloat(cred_loop[2]); 
+            const cred4 = parseFloat(cred_loop[3]); 
+            const cred5 = parseFloat(cred_loop[4]); 
+            const cred6 = parseFloat(cred_loop[5]); 
+            const cred7 = parseFloat(cred_loop[6]); 
+            const cred8 = parseFloat(cred_loop[7]); 
+            const cred9 = parseFloat(cred_loop[8]); 
+
+            const cred_data_result = [cred1,cred2,cred3,cred4,cred5,cred6,cred7,cred8,cred9];
+
+            // console.log(cred1);
+            // console.log(cred2);
+            // console.log(cred3);
+            // console.log(cred4);
+            // console.log(cred5);
+            // console.log(cred6);
+            // console.log(cred7);
+            // console.log(cred8);
+            // console.log(cred9);
+
+            // Replace NaN with 0 without affecting existing 0 values
+            for (let i = 0; i < cred_data_result.length; i++) {
+              if (isNaN(cred_data_result[i])) {
+                cred_data_result[i] = 0.0;
+              }
+            }
+            
+            // console.log(data_result)
+            // repace nan with 0 to conform that is there is any chance of arrear
+            const cred_result_1 = cred_data_result[0];
+            const cred_result_2 = cred_data_result[1];
+            const cred_result_3 = cred_data_result[2];
+            const cred_result_4 = cred_data_result[3];
+            const cred_result_5 = cred_data_result[4];
+            const cred_result_6 = cred_data_result[5];
+            const cred_result_7 = cred_data_result[6];
+            const cred_result_8 = cred_data_result[7];
+            const cred_result_9 = cred_data_result[8];
+
+            // console.log(cred_result_1);
+            // console.log(cred_result_2);
+            // console.log(cred_result_3);
+            // console.log(cred_result_4);
+            // console.log(cred_result_5);
+            // console.log(cred_result_6);
+            // console.log(cred_result_7);
+            // console.log(cred_result_8);
+            // console.log(cred_result_9);
+
+            const final_cred_result = (cred_result_1+ cred_result_2+ cred_result_3+ cred_result_4+ cred_result_5+ cred_result_6+ cred_result_7+ cred_result_8+ cred_result_9)
             
             // adding all the inputs from the user and adding all the values
-                        const adding = parseInt((result_1)+ (result_2) +(result_3)+(result_4)+ (result_5)+ (result_6)+ (result_7)+ (result_8)+(result_9));
+                        const adding = parseFloat((result_1)+ (result_2) +(result_3)+(result_4)+ (result_5)+ (result_6)+ (result_7)+ (result_8)+(result_9));
+
             
                         // convering the inputs value into Interger in case of 
                         const di  = parseInt(adding);
+                
                         // divide the value with the score
-                        const divide = adding/22;
-                        // console.log(di);
-                        // console.log(di);
-                        // console.log(divide);
+                        const divide = adding/final_cred_result;
             
                         // getting the value form the sum
                         const sum = document.getElementById("sum")

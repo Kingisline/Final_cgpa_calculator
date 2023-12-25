@@ -168,9 +168,9 @@ const adding = (a+b+c+d+e+f+g+h);
    
          if(result==='1'){
         const total = parseFloat(a)
-        console.log(total);
+        // console.log(total);
         const divide =  parseFloat(total / 1);
-        console.log(divide);
+        // console.log(divide);
         // console.log(total);
       
         if(isNaN(inputElement1)){
@@ -190,10 +190,10 @@ const adding = (a+b+c+d+e+f+g+h);
       
     }else if(result==='2'){
         const total = parseFloat(a+b)
-        console.log(total);
+        // console.log(total);
         const divide = parseFloat( total / 2);
-        console.log(divide);
-        console.log(total);
+        // console.log(divide);
+        // console.log(total);
         if(a>10){
             btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
@@ -214,10 +214,10 @@ const adding = (a+b+c+d+e+f+g+h);
       
     }else if(result==='3'){
         const total = parseFloat(a+b+c)
-        console.log(total);
+        // console.log(total);
         const divide =   parseFloat(total / 3);
-        console.log(divide);
-        console.log(total);
+        // console.log(divide);
+        // console.log(total);
         if(a>10){
             btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
@@ -240,10 +240,10 @@ const adding = (a+b+c+d+e+f+g+h);
       
     }else if(result==='4'){
         const total = parseFloat(a+b+c+d)
-        console.log(total);
+        // console.log(total);
         const divide =  parseFloat(total / 4);
-        console.log(divide);
-        console.log(total);
+        // console.log(divide);
+        // console.log(total);
         if(a>10){
             btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-04";
@@ -303,10 +303,10 @@ const adding = (a+b+c+d+e+f+g+h);
       
     }else if(result==='6'){
         const total = parseFloat(a+b+c+d+e+f)
-        console.log(total);
+        // console.log(total);
         const divide =  parseFloat(total / 6);
-        console.log(divide);
-        console.log(total);
+        // console.log(divide);
+        // console.log(total);
         if(a>10){
             btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
@@ -341,10 +341,10 @@ const adding = (a+b+c+d+e+f+g+h);
       
     }else if(result==='7'){
         const total = parseFloat(a+b+c+d+e+f+g)
-        console.log(total);
+        // console.log(total);
         const divide =  parseFloat(total / 7);
-        console.log(divide);
-        console.log(total);
+        // console.log(divide);
+        // console.log(total);
         if(a>10){
             btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
@@ -383,10 +383,10 @@ const adding = (a+b+c+d+e+f+g+h);
       
     }else if(result==='8'){
         const total = parseFloat(a+b+c+d+e+f+g+h)
-        console.log(total);
+        // console.log(total);
         const divide =  parseFloat(total / 8);
-        console.log(divide);
-        console.log(total);
+        // console.log(divide);
+        // console.log(total);
         if(a>10){
             btn.style.color = "yellow"
             btn.innerHTML = "Enter a number less than 10 for SEM-01";
@@ -476,14 +476,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
 // footer js
-document.addEventListener("DOMContentLoaded", function () {
-    const feedbackForm = document.querySelector(".feedback-form");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const feedbackForm = document.querySelector(".feedback-form");
   
-    // Show the feedback form with animation
-    setTimeout(function () {
-      feedbackForm.classList.add("show");
-    }, 1000); // Adjust the delay as needed
-  });
+//     // Show the feedback form with animation
+//     setTimeout(function () {
+//       feedbackForm.classList.add("show");
+//     }, 1000); // Adjust the delay as needed
+//   });
   
 
 

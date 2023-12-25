@@ -8,7 +8,7 @@ function optional(elem){
     }
     else if(elem.value == "arrear"){
         const sum = document.getElementById("arrear1");
-        sum.innerHTML = 0;
+        // sum.innerHTML = 0;
         document.getElementById("optional").style.display = "none";
      } else{
         document.getElementById("optional").style.display = "none";
@@ -55,6 +55,8 @@ const B = document.getElementById("b+");
 const b = document.getElementById("b");
 const c = document.getElementById("c");
 const resu = document.getElementById("res1");
+const cred = document.getElementById("cre1");
+
 
 o.addEventListener('change', function () {
 
@@ -63,6 +65,7 @@ if(o.checked){
     const b = 10;
     const result1 = a * b;
     // const mul =`${result1}`;
+    cred.innerHTML = a
     resu.innerHTML = result1;
      
 }
@@ -150,7 +153,7 @@ B.addEventListener('change', function () {
                 const result = changeNaN(inputs[i], 0);
                 // console.log(result);
             }
-            const add1 = parseInt(inputs[0]); 
+            const add1 = parseFloat(inputs[0]); 
 
             
             const data_result = [add1];
@@ -166,49 +169,64 @@ B.addEventListener('change', function () {
             // console.log(data_result)
             // repace nan with 0 to conform that is there is any chance of arrear
             const result_1 = data_result[0];
+
+                         // credit adding from cre1
+                         const cre1 = document.getElementById("cre1").innerHTML;
+
+                         const cred_adding = (cre1);
+             
+                         const cred_loop = [cre1]
+                         //   console.log(inputs)
+                           for (let i = 0; i < cred_loop.length; i++) {
+                             const result = changeNaN(cred_loop[i], 0);
+                         }
+                                            
+                         const cred1 = parseFloat(cred_loop[0]);   
+             
+                         const cred_data_result = [cred1];
+             
+                         // console.log(cred1);
+                 
+                         // Replace NaN with 0 without affecting existing 0 values
+                         for (let i = 0; i < cred_data_result.length; i++) {
+                           if (isNaN(cred_data_result[i])) {
+                             cred_data_result[i] = 0.0;
+                           }
+                         }
+                         
+                         // console.log(data_result)
+                         // repace nan with 0 to conform that is there is any chance of arrear
+                         const cred_result_1 = cred_data_result[0];
+             
+                         console.log(cred_result_1);
+                         
+                         const final_cred_result = (cred_result_1) 
     
                                         
             
             // adding all the inputs from the user and adding all the values
-                        const adding = parseInt((result_1));
+                        const adding = parseFloat((result_1));
             
                         // convering the inputs value into Interger in case of 
                         const di  = parseInt(adding);
                         // divide the value with the score
-                        const divide = adding/10;
+                        const divide = adding/final_cred_result;
                         // console.log(di);
                         // console.log(di);
                         // console.log(divide);
             
                         // getting the value form the sum
                         const sum = document.getElementById("sum")
+                        document.getElementById('show_lastDiv').style.display = 'block';
+
+
+                       if(isNaN(divide)){
+                        alert("Enter the values")
+                       }else{
+                        sum.style.color = "#7360DF";
+                        sum.innerHTML = "GPA :"+ " "+divide;
+                       }
+                        
             
-            
-                        // declare the valu as 5.00
-                        const valu = "5.000000000000000"
-            
-            
-                        // by using if statement if the divide is zero
-                        if(divide=='0'){
-                            sum.style.color = "red";
-                            sum.innerHTML = "Arrear!!"
-                        }
-                        //  if the value is less than 5
-                        else if(divide<valu){
-                            sum.style.color = "red";
-                            sum.innerHTML =  divide +"       "+" ! You have arrear";
-                        }
-                        else if(divide>valu && (result_1 === 0)){
-                            sum.style.color = "red";
-                            sum.innerHTML =  divide +"       "+" ! You have arrear";
-                        }
-                        else{
-                            sum.style.color = "#45f3ff"
-                            sum.innerHTML = divide + "&#127881;";
-                        }  
+                     
                     });
-            
-            
-                    $('#select1').select2({
-                        theme: 'classic' 
-                      });

@@ -182,8 +182,8 @@ input[type="checkbox"]:focus {
 /* Basic button styles */
 .button {
   display: inline-block;
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 12px 28px;
+  font-size: 18px;
   text-align: center;
   text-decoration: none;
   background-color: #3498db;
@@ -211,7 +211,23 @@ color: #45f3ff;
 font-size: 1.5rem;
 }
 
-
 .respara{
   color: #F0F0F0;
+}
+
+.final_output{
+  width: 250px;
+  border-radius: 5px;
+  background-color: #EFD595;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.final_output span{
+  width: 250px;
+  font-size: 18px; 
+  font-weight: bold;
+  color: #3498db;
 }

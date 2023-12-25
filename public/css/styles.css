@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     /* min-height: 100vh; */
-    /* background-color: #000; */
+    background-color: #D0D4CA;
 }
 
 .main-container {
@@ -417,7 +417,7 @@ opacity: 0.8;
   .divinput input:focus ~ span
    {
   
-      color: #c1cd1f;
+      color: #fff;
       transform: translateX(0px) translateY(-34px);
       font-size: 0.75em;
    }
@@ -676,6 +676,6 @@ opacity: 0.8;
     text-align: center;
 }
 span{
-    color: #16FF00;
-    text-shadow: 3px 3px 3px #000;
+    color: #610C9F;
+    /* text-shadow: 3px 3px 3px #000; */
 }
